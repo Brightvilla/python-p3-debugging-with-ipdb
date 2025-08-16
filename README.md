@@ -213,7 +213,7 @@ FAILED ipdb_debugging.py adds_two() adds 2 to input arg and returns sum - assert
 
 So what's happening? In our `FAILURES` section, we can see that the test is
 calling the `plus_two` function and passing in `3` as an argument. Below that we
-can see that the test is expecting `5` to be returned, but that `3` is being
+can see that the test is expecting `5` to be returned, but that `3` is beingi
 returned instead. Let's take another look at the code in `ipdb_debugging.py`:
 
 ```py
@@ -241,7 +241,7 @@ and drop into your `ipdb` console. Your terminal should look like this:
 
 ```txt
 ipdb_debugging.py adds_two() adds 2 to input arg and returns sum > /lib/ipdb_debugging.py(8)plus_two()
-      6     num + 2
+      6     num = num + 2
       7     ipdb.set_trace()
 ----> 8     return num
 
